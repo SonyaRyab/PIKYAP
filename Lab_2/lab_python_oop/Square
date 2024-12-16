@@ -1,0 +1,14 @@
+from lab_python_oop.Rectangle import Rectangle
+
+class Square(Rectangle):
+    def __init__(self, side, color="blue"):
+        super().__init__(side, side, color)
+
+    def area(self): return self.width * self.height
+
+    def __repr__(self):
+        return "Квадрат(сторона={}, {}, площадь={})".format(self.width, self.color, self.area())
+
+    @classmethod
+    def shape_n(cls):
+        return "Квадрат"
