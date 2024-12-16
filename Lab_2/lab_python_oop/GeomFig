@@ -1,0 +1,10 @@
+import abc
+import math
+import sys
+
+class Figure(abc.ABC):
+    @abc.abstractmethod
+    def area(self): pass
+
+def print_area(Figure):
+    print("площадь: ", Figure.area())
