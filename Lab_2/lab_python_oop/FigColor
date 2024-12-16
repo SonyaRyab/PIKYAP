@@ -1,0 +1,9 @@
+class FigColor:
+    def __init__(self, color_n):
+        self.color = color_n
+    def get_color(self):
+        return self.color
+    def set_color(self, color_n):
+        set.color = color_n
+    def __str__(self):
+        return f'цвет фигуры: {self.color}'
