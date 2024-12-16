@@ -1,0 +1,16 @@
+from .GeomFig import Figure
+import math
+
+class Circle(Figure):
+    def __init__(self, radius, color="blue"):
+        self.radius = radius
+        self.color = color
+
+    def area(self): return self.radius * self.radius * math.pi
+
+    def __repr__(self):
+        return "Круг(радиус ={}, цвет={}, площадь={})".format(self.radius, self.color, self.area())
+
+    @classmethod
+    def shape_n(cls):
+        return "Круг"
